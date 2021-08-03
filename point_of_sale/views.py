@@ -8,7 +8,7 @@ from items.models import Item
 class Menu(APIView):
     def get(self, request, *args, **kwargs):
         """
-        Grab all the items with their modifier groups and modifiers
+        Grab all the items with their modifier groups and related modifiers
         """
 
         items = Item.objects.all()
